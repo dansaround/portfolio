@@ -17,23 +17,22 @@ const Services = () => {
           <ul className="service__list">
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Logo Design</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Branding Brief</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Post's templates</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>
+                Unleash your brand's unique identity with our team of
+                exceptional designers spanning Latin America.
+              </p>
             </li>
           </ul>
         </article>
@@ -46,23 +45,26 @@ const Services = () => {
           <ul className="service__list">
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>
+                This responsive website is an example of using HTML/CSS/JS with
+                React.js Project.
+              </p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Fully responsive websites</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Backend approachable</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p> E-Commerce is possible </p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Search Engine Optimization</p>
             </li>
           </ul>
         </article>
@@ -75,19 +77,19 @@ const Services = () => {
           <ul className="service__list">
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p> Product Photography</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Event Photography</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Video Editing</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p> Social Media Content Creation </p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />

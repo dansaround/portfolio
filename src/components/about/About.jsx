@@ -39,10 +39,10 @@ const About = () => {
             </article>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam
-            officiis unde sapiente odit culpa voluptatibus consequuntur qui
-            neque commodi asperiores ad esse omnis at doloremque in, ullam
-            soluta quod mollitia!
+            I am a 28-year-old Frontend Developer specializing in React.js. I
+            have a degree in Social Communication and a wealth of experience in
+            radio production, communication strategy, marketing analysis, and
+            project management.
           </p>
 
           <a href="contact" className="btn btn-primary">
