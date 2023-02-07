@@ -5,6 +5,8 @@ disqus: hackmd
 
 # Dan Kcomt's Portfolio
 
+![](https://i.imgur.com/VS2j6Ct.png)
+
 ## Table of Contents
 
 [TOC]
