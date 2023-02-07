@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+---
+title: "Project documentation template"
+disqus: hackmd
+---
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Dan Kcomt's Portfolio
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+[TOC]
 
-### `npm start`
+## Intro
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This is a Portfolio the projects I have developed so far in my developer journey.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Feel free to contact me through: kcomtdaniel@gmail.com
 
-### `npm test`
+## User story
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```jsx=
+const App = () => {
+  return (
+    <>
+      <Header />
+      <Nav />
+      <About />
+      <Experience />
+      <Services />
+      <Portfolio />
+      <Testimonials />
+      <Contact />
+      <Footer />
+    </>
+  );
+};
+```
 
-### `npm run build`
+The code defines a single component App that renders several other components, each responsible for displaying a different section of the portfolio page.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The component App returns a layout that consists of:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Header component** - displays the header of the portfolio page
+**Nav component** - responsible for the navigation menu
+**About component** - displays information about the portfolio owner
+**Experience component** - highlights the owner's professional background and experience
+**Services component** - outlines the services offered by the portfolio owner
+**Portfolio component** - showcases the portfolio owner's past work and projects
+**Testimonials component** - displays testimonials from clients and colleagues
+**Contact component** - provides contact information for the portfolio owner
+**Footer component** - displays the footer of the portfolio page.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+By breaking down the portfolio into smaller, self-contained components, the code becomes more manageable and easier to maintain. Additionally, it allows for a more modular and scalable approach, making it easier to add or modify sections of the portfolio in the future.
 
-### `npm run eject`
+## Appendix and FAQ
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+:::info
+**Find this document incomplete?** Leave a comment!
+:::
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+###### tags: `Templates` `Documentation`
