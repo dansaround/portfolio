@@ -1,6 +1,6 @@
 ---
-title: "Project documentation template"
-disqus: hackmd
+title: "Dan Kcomt's Portfolio"
+by: Dan Kcomt
 ---
 
 # Dan Kcomt's Portfolio
@@ -9,7 +9,12 @@ disqus: hackmd
 
 ## Table of Contents
 
-[TOC]
+Dan Kcomt’s Portfolio
+
+- Table of Contents
+- Intro
+- User story
+- Appendix and FAQ
 
 ## Intro
 
@@ -59,4 +64,4 @@ By breaking down the portfolio into smaller, self-contained components, the code
 **Find this document incomplete?** Leave a comment!
 :::
 
-###### tags: `Templates` `Documentation`
+###### tags: `Portfolio` `Documentation`
