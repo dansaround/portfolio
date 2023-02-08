@@ -1,48 +1,32 @@
 import React from "react";
 import "./portfolio.css";
+import PRESENTATION from "../../assets/portfoliohtml.png";
+import GAMEOFLIFE from "../../assets/gameoflife.gif";
+import TODOAPP from "../../assets/todoapp.png";
+
+import { FaReact } from "react-icons/fa";
 
 const data = [
   {
     id: 1,
-    image: "https://picsum.photos/300/200",
-    title: "This is a portfolio item title",
-    github: "https://github.com",
-    demo: "https://github.com",
+    image: PRESENTATION,
+    title: "My Very First Personal Site",
+    github: "https://github.com/dansaround/presentation",
+    demo: "https://papaya-malasada-a008d0.netlify.app/",
   },
   {
     id: 2,
-    image: "https://picsum.photos/300/200",
-    title: "This is a portfolio item title",
-    github: "https://github.com",
-    demo: "https://github.com",
+    image: GAMEOFLIFE,
+    title: "The Game of Life",
+    github: "https://github.com/dansaround/PartyYard",
+    demo: "https://party-yard.vercel.app/",
   },
   {
     id: 3,
-    image: "https://picsum.photos/300/200",
-    title: "This is a portfolio item title",
-    github: "https://github.com",
-    demo: "https://github.com",
-  },
-  {
-    id: 4,
-    image: "https://picsum.photos/300/200",
-    title: "This is a portfolio item title",
-    github: "https://github.com",
-    demo: "https://github.com",
-  },
-  {
-    id: 5,
-    image: "https://picsum.photos/300/200",
-    title: "This is a portfolio item title",
-    github: "https://github.com",
-    demo: "https://github.com",
-  },
-  {
-    id: 6,
-    image: "https://picsum.photos/300/200",
-    title: "This is a portfolio item title",
-    github: "https://github.com",
-    demo: "https://github.com",
+    image: TODOAPP,
+    title: "To Do App",
+    github: "https://github.com/dansaround/react-to-do",
+    demo: "https://react-to-do-flax.vercel.app/",
   },
 ];
 
