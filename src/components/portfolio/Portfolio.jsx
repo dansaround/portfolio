@@ -1,10 +1,8 @@
 import React from "react";
 import "./portfolio.css";
-import PRESENTATION from "../../assets/portfoliohtml.png";
+import PRESENTATION from "../../assets/portfoliohtml.gif";
 import GAMEOFLIFE from "../../assets/gameoflife.gif";
-import TODOAPP from "../../assets/todoapp.png";
-
-import { FaReact } from "react-icons/fa";
+import TODOAPP from "../../assets/todoapp.gif";
 
 const data = [
   {
