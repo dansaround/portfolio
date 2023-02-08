@@ -9,22 +9,22 @@ import "swiper/css/pagination";
 
 const data = [
   {
-    avatar: "https://picsum.photos/200",
+    avatar: "https://picsum.photos/190",
     name: "Mónica Marin",
     review:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error nostrum sequ impedit perferendis ipsam maiores deleniti obcaecati eligendi.",
+      "Increíble trabajar contigo, eres una persona muy profesional y con mucha experiencia. Me encantó tu trabajo y tu forma de trabajar.",
+  },
+  {
+    avatar: "https://picsum.photos/210",
+    name: "Justin Barrero",
+    review:
+      "Muchas gracias por tu trabajo, me encantó tu forma de trabajar y tu profesionalidad. Sin duda volveré a trabajar contigo.",
   },
   {
     avatar: "https://picsum.photos/200",
-    name: "Lorena Cerezo",
+    name: "Ronald Prato",
     review:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error nostrum sequ impedit perferendis ipsam maiores deleniti obcaecati eligendi.",
-  },
-  {
-    avatar: "https://picsum.photos/200",
-    name: "Ernest Achiever",
-    review:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error nostrum sequ impedit perferendis ipsam maiores deleniti obcaecati eligendi.",
+      "Hey! para el poco tiempo que llevas en esto, eres una persona muy aplicada y has ganado experiencia en muy poco tiempo",
   },
 ];
 

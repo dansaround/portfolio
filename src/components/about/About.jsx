@@ -45,7 +45,7 @@ const About = () => {
             project management.
           </p>
 
-          <a href="contact" className="btn btn-primary">
+          <a href="#contact" className="btn btn-primary">
             Let's Talk
           </a>
         </div>
