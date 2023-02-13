@@ -24,7 +24,7 @@
 }
 
 .contact__option:hover {
-  background: transparent;
+  background: rgba(0, 0, 0, 0.4);
   border-color: var(--color-primary-variant);
 }
 

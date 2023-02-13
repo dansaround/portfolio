@@ -1,6 +1,6 @@
 header {
   height: 100vh;
-  padding-top: 7rem;
+  padding-top: 3rem;
   overflow: hidden;
 }
 
@@ -40,6 +40,7 @@ header {
 
 /* ========== MY PHOTO ========== */
 .me {
+  object-fit: contain;
   background: linear-gradient(var(--color-primary), transparent);
   width: 22rem;
   height: 30rem;
@@ -64,14 +65,14 @@ header {
 /* ========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
 @media screen and (max-width: 1024px) {
   header {
-    height: 68vh;
+    /* height: 68vh; */
   }
 }
 
-/* ========== MEDIA QUERIES (SMALL DEVICES) ========== */
+/* =========Z MEDIA QUERIES (SMALL DEVICES) ========== */
 @media screen and (max-width: 600px) {
   header {
-    height: 100vh;
+    /* height: 100vh; */
   }
   .header__socials,
   .scroll__down {
