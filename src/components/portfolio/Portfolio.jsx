@@ -5,6 +5,7 @@ import GAMEOFLIFE from "../../assets/gameoflife.gif";
 import TODOAPP from "../../assets/todoapp.gif";
 import QR from "../../assets/QRComponent.png";
 import PREVIEW_COMPONENT from "../../assets/screenshot-mobile.png";
+import INTERACTIVECARDS from "../../assets/interactive-card.png";
 
 const data = [
   {
@@ -41,6 +42,13 @@ const data = [
     title: "Responsive Preview Component",
     github: "https://github.com/dansaround/frontend-product-preview",
     demo: "https://frontend-product-preview-component.vercel.app/",
+  },
+  {
+    id: 6,
+    image: INTERACTIVECARDS,
+    title: "Interactive Card Payment Component",
+    github: "https://github.com/dansaround/frontend-product-preview",
+    demo: "https://frontend-interactive-card.vercel.app/",
   },
 ];
 
