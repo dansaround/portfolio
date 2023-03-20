@@ -13,7 +13,7 @@ const HeaderSocials = () => {
       <a href="https://github.com/dansaround/" target="_blank">
         <BsGithub />
       </a>
-      <a href="https://instagram.com/dkcomt" target="_blank">
+      <a href="https://www.instagram.com/dansaround_/" target="_blank">
         <BsInstagram />
       </a>
     </div>
