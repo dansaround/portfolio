@@ -6,6 +6,7 @@ import TODOAPP from "../../assets/todoapp.gif";
 import QR from "../../assets/QRComponent.png";
 import PREVIEW_COMPONENT from "../../assets/screenshot-mobile.png";
 import INTERACTIVECARDS from "../../assets/interactive-card.png";
+import THEXO from "../../assets/thexo.png";
 
 const data = [
   {
@@ -13,13 +14,13 @@ const data = [
     image: PRESENTATION,
     title: "My Very First Personal Site",
     github: "https://github.com/dansaround/presentation",
-    demo: "https://papaya-malasada-a008d0.netlify.app/",
+    demo: "https://thexo.encolados.com/",
   },
   {
     id: 2,
-    image: GAMEOFLIFE,
-    title: "The Game of Life",
-    github: "https://github.com/dansaround/PartyYard",
+    image: THEXO,
+    title: "The XO Game",
+    github: "https://github.com/dansaround/thexo",
     demo: "https://party-yard.vercel.app/",
   },
   {
@@ -49,6 +50,13 @@ const data = [
     title: "Interactive Card Payment Component",
     github: "https://github.com/dansaround/frontend-product-preview",
     demo: "https://frontend-interactive-card.vercel.app/",
+  },
+  {
+    id: 7,
+    image: GAMEOFLIFE,
+    title: "The Game of Life",
+    github: "https://github.com/dansaround/PartyYard",
+    demo: "https://party-yard.vercel.app/",
   },
 ];
 
