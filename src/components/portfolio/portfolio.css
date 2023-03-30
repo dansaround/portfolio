@@ -11,11 +11,11 @@
   border: 1px solid transparent;
   transition: var(--transition);
 }
-
+/* 
 .portfolio__item:hover {
   border-color: var(--color-primary-variant);
   background: rgba(0, 0, 0, 0.4);
-}
+} */
 
 .portfolio__item-image {
   border-radius: 1.5rem;

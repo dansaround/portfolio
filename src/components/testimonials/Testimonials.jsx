@@ -1,11 +1,13 @@
 import React from "react";
 import "./testimonials.css";
 // import Swiper core and required modules
-import { Pagination } from "swiper";
+import SwiperCore, { Pagination, Autoplay, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+
+SwiperCore.use([Autoplay]);
 
 const data = [
   {
@@ -37,10 +39,17 @@ const Testimonials = () => {
       <Swiper
         className="container testimonials__container"
         // install Swiper modules
-        modules={[Pagination]}
+        modules={[Autoplay, Navigation, Pagination]}
         spaceBetween={40}
         slidesPerView={1}
-        pagination={{ clickable: true }}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
       >
         {data.map(({ avatar, name, review }, index) => {
           return (

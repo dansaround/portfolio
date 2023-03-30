@@ -23,10 +23,10 @@
   transition: var(--transition);
 }
 
-.contact__option:hover {
+/* .contact__option:hover {
   background: rgba(0, 0, 0, 0.4);
   border-color: var(--color-primary-variant);
-}
+} */
 
 .contact__option-icon {
   font-size: 1.5rem;

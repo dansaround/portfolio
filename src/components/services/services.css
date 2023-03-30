@@ -12,11 +12,11 @@
   transition: var(--transition);
 }
 
-.service:hover {
+/* .service:hover {
   background: rgba(0, 0, 0, 0.4);
   border-color: var(--color-primary-variant);
   cursor: default;
-}
+} */
 
 .service__head {
   background-color: var(--color-primary);

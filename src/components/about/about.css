@@ -44,11 +44,11 @@
   transition: var(--transition);
 }
 
-.about__card:hover {
+/* .about__card:hover {
   background: rgba(0, 0, 0, 0.4);
   border-color: var(--color-primary-variant);
   cursor: default;
-}
+} */
 
 .about__icon {
   color: var(--color-primary);
