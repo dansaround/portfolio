@@ -19,7 +19,7 @@ const data = [
   {
     id: 2,
     image: THEXO,
-    title: "The XO Game",
+    title: "The XO Game | Multiplayer Only",
     github: "https://github.com/dansaround/thexo",
     demo: "https://party-yard.vercel.app/",
   },
@@ -49,7 +49,7 @@ const data = [
     image: INTERACTIVECARDS,
     title: "Interactive Card Payment Component",
     github: "https://github.com/dansaround/frontend-product-preview",
-    demo: "https://frontend-interactive-card.vercel.app/",
+    demo: "https://frontend-interactive-card-dansaround.vercel.app/",
   },
   {
     id: 7,
