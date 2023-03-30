@@ -11,7 +11,7 @@ footer a {
 }
 
 .footer__logo {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 500;
   margin-bottom: 2rem;
   display: inline-block;
@@ -28,23 +28,24 @@ footer a {
 .footer__socials {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 3rem;
   margin-bottom: 4rem;
 }
 
 .footer__socials a {
-  background: var(--color-bg);
+  background: var(--color-bg-variant);
   color: var(--color-white);
   padding: 0.8rem;
   border-radius: 0.7rem;
   display: flex;
   border: 1px solid transparent;
+  font-size: x-large;
 }
 
 .footer__socials a:hover {
   background: transparent;
-  color: var(--color-bg);
-  border-color: var(--color-bg);
+  color: var(--color-bg-variant);
+  border-color: var(--color-bg-variant);
 }
 
 .footer__copyright {

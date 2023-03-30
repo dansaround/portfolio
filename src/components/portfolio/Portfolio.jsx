@@ -2,9 +2,6 @@ import React from "react";
 import "./portfolio.css";
 import PRESENTATION from "../../assets/portfoliohtml.gif";
 import GAMEOFLIFE from "../../assets/gameoflife.gif";
-import TODOAPP from "../../assets/todoapp.gif";
-import QR from "../../assets/QRComponent.png";
-import PREVIEW_COMPONENT from "../../assets/screenshot-mobile.png";
 import INTERACTIVECARDS from "../../assets/interactive-card.png";
 import THEXO from "../../assets/thexo.png";
 
@@ -25,34 +22,13 @@ const data = [
   },
   {
     id: 3,
-    image: TODOAPP,
-    title: "To Do App",
-    github: "https://github.com/dansaround/react-to-do",
-    demo: "https://react-to-do-flax.vercel.app/",
-  },
-  {
-    id: 4,
-    image: QR,
-    title: "QR Component",
-    github: "https://github.com/dansaround/frontend-qr-component",
-    demo: "https://frontend-qr-component.vercel.app/",
-  },
-  {
-    id: 5,
-    image: PREVIEW_COMPONENT,
-    title: "Responsive Preview Component",
-    github: "https://github.com/dansaround/frontend-product-preview",
-    demo: "https://frontend-product-preview-component.vercel.app/",
-  },
-  {
-    id: 6,
     image: INTERACTIVECARDS,
     title: "Interactive Card Payment Component",
     github: "https://github.com/dansaround/frontend-product-preview",
     demo: "https://frontend-interactive-card-dansaround.vercel.app/",
   },
   {
-    id: 7,
+    id: 4,
     image: GAMEOFLIFE,
     title: "The Game of Life",
     github: "https://github.com/dansaround/PartyYard",
