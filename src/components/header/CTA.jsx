@@ -1,5 +1,7 @@
 import React from "react";
-import CV from "../../assets/CV 3.0 2023.pdf";
+import CV from "../../assets/CV2023_V3.pdf";
+
+portfolio\src\assets\
 
 const CTA = () => {
   return (
