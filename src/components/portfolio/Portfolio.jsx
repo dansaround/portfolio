@@ -11,14 +11,14 @@ const data = [
     image: PRESENTATION,
     title: "My Very First Personal Site",
     github: "https://github.com/dansaround/presentation",
-    demo: "https://thexo.encolados.com/",
+    demo: "https://papaya-malasada-a008d0.netlify.app/",
   },
   {
     id: 2,
     image: THEXO,
-    title: "The XO Game | Multiplayer Only",
+    title: "The XO Game | Multiplayer Only, share with a friend",
     github: "https://github.com/dansaround/thexo",
-    demo: "https://party-yard.vercel.app/",
+    demo: "https://thexo.encolados.com/",
   },
   {
     id: 3,
