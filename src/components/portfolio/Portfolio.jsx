@@ -5,6 +5,7 @@ import GAMEOFLIFE from "../../assets/gameoflife.gif";
 import INTERACTIVECARDS from "../../assets/interactive-card.png";
 import THEXO from "../../assets/thexo.png";
 import DANCEAROUND from "../../assets/DANCEAROUND.png";
+import SUMMAREASE from "../../assets/summarease.png";
 
 const data = [
   {
@@ -41,6 +42,13 @@ const data = [
     title: "Dance Around: Personal Project",
     github: "https://github.com/dansaround/dancearound",
     demo: "https://dancearound.vercel.app/",
+  },
+  {
+    id: 6,
+    image: SUMMAREASE,
+    title: "SummarEase: AI Audio Summary",
+    github: "https://github.com/dansaround/summarEase",
+    demo: "https://summar-ease.vercel.app/",
   },
 ];
 
