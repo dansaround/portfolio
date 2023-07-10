@@ -5,7 +5,7 @@ import GAMEOFLIFE from "../../assets/gameoflife.gif";
 import INTERACTIVECARDS from "../../assets/interactive-card.png";
 import THEXO from "../../assets/thexo.png";
 import DANCEAROUND from "../../assets/DANCEAROUND.png";
-import SUMMAREASE from "../../assets/summarease.png";
+import CONSIZE from "../../assets/consize.png";
 
 const data = [
   {
@@ -45,10 +45,10 @@ const data = [
   },
   {
     id: 6,
-    image: SUMMAREASE,
-    title: "SummarEase: AI Audio Summary",
-    github: "https://github.com/dansaround/summarEase",
-    demo: "https://summar-ease.vercel.app/",
+    image: CONSIZE,
+    title: "ChatGPT: AI Audio Summary",
+    github: "https://github.com/Ronald-Prato/summarease-client/",
+    demo: "http://consizegpt.com/",
   },
 ];
 

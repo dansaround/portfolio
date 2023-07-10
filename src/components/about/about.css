@@ -71,6 +71,11 @@
   color: var(--color-light);
 }
 
+.clients__list {
+  display: flex;
+  flex-direction: column;
+}
+
 /* ========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
 @media screen and (max-width: 1024px) {
   .about__container {
