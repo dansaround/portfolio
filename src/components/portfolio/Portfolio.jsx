@@ -2,16 +2,13 @@ import React from "react";
 import "./portfolio.css";
 import PRESENTATION from "../../assets/portfoliohtml.gif";
 import GAMEOFLIFE from "../../assets/gameoflife.gif";
-import INTERACTIVECARDS from "../../assets/interactive-card.png";
-import THEXO from "../../assets/thexo.png";
 import DANCEAROUND from "../../assets/DANCEAROUND.png";
-import CONSIZE from "../../assets/consize.png";
 
 const data = [
   {
     id: 1,
     image: PRESENTATION,
-    title: "My Very First Personal Site",
+    title: "Javascript Vanilla Site",
     github: "https://github.com/dansaround/presentation",
     demo: "https://papaya-malasada-a008d0.netlify.app/",
   },
@@ -23,32 +20,11 @@ const data = [
     demo: "https://party-yard.vercel.app/",
   },
   {
-    id: 3,
-    image: INTERACTIVECARDS,
-    title: "Interactive Card Payment Component",
-    github: "https://github.com/dansaround/frontend-product-preview",
-    demo: "https://frontend-interactive-card-dansaround.vercel.app/",
-  },
-  {
-    id: 4,
-    image: THEXO,
-    title: "The XO Game | Multiplayer Only, share with a friend",
-    github: "https://github.com/dansaround/thexo",
-    demo: "https://thexo.encolados.com/",
-  },
-  {
     id: 5,
     image: DANCEAROUND,
     title: "Dance Around: Personal Project",
     github: "https://github.com/dansaround/dancearound",
     demo: "https://dancearound.vercel.app/",
-  },
-  {
-    id: 6,
-    image: CONSIZE,
-    title: "ChatGPT: AI Audio Summary",
-    github: "https://github.com/Ronald-Prato/summarease-client/",
-    demo: "http://consizegpt.com/",
   },
 ];
 
