@@ -1,30 +1,34 @@
 import React from "react";
 import "./portfolio.css";
-import PRESENTATION from "../../assets/portfoliohtml.gif";
-import GAMEOFLIFE from "../../assets/gameoflife.gif";
-import DANCEAROUND from "../../assets/DANCEAROUND.png";
+import HFIMGEN from "../../assets/portfolio/hg-image-generator.gif";
+import DANCEAROUND from "../../assets/portfolio/dancearound.gif";
+import SIRVALO from "../../assets/portfolio/sirvalogames.gif";
 
 const data = [
   {
     id: 1,
-    image: PRESENTATION,
-    title: "Javascript Vanilla Site",
-    github: "https://github.com/dansaround/presentation",
-    demo: "https://papaya-malasada-a008d0.netlify.app/",
-  },
-  {
-    id: 2,
-    image: GAMEOFLIFE,
-    title: "The Game of Life",
-    github: "https://github.com/dansaround/PartyYard",
-    demo: "https://party-yard.vercel.app/",
-  },
-  {
-    id: 5,
     image: DANCEAROUND,
     title: "Dance Around: Personal Project",
     github: "https://github.com/dansaround/dancearound",
     demo: "https://dancearound.vercel.app/",
+    description: "Personal video library using Youtube's API",
+  },
+  {
+    id: 2,
+    image: HFIMGEN,
+    title: "AI Image Generator",
+    github: "https://github.com/dansaround/hf-image-generator",
+    demo: "https://hf-image-generator.vercel.app/",
+    description: "Image Generator using Huggingface.js Inference API",
+  },
+  {
+    id: 3,
+    image: SIRVALO,
+    title: "Sirvalo Games | Android App",
+    github: "https://github.com/dansaround/hf-image-generator",
+    demo: "https://www.instagram.com/sirvalo.games/",
+    description:
+      "Fullstack app with Node, React Native and Firebase | Repos are Private: links will redirect to customer's site",
   },
 ];
 
@@ -41,6 +45,7 @@ const Portfolio = () => {
               <img src={item.image} alt="portfolio item" />
             </div>
             <h3>{item.title}</h3>
+            <span>{item.description}</span>
             <div className="portfolio__item-cta">
               <a href={item.github} className="btn" target="_blank">
                 Github
