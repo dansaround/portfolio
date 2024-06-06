@@ -1,12 +1,13 @@
 .about__container {
   display: grid;
   grid-template-columns: 20% 60%;
-  gap: 5%;
+  gap: 8%;
   place-items: center;
+  justify-content: center;
 }
 
 .about__me {
-  width: 100%;
+  width: 120%;
   aspect-ratio: 1/1;
   border-radius: 2rem;
   background: linear-gradient(
