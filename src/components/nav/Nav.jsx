@@ -18,6 +18,13 @@ const Nav = () => {
         <AiOutlineHome />
       </a>
       <a
+        href="#portfolio"
+        onClick={() => setActiveNav("#portfolio")}
+        className={activeNav === "#portfolio" ? "active" : ""}
+      >
+        <RiServiceLine />
+      </a>
+      <a
         href="#about"
         onClick={() => setActiveNav("#about")}
         className={activeNav === "#about" ? "active" : ""}
@@ -31,13 +38,7 @@ const Nav = () => {
       >
         <BiBook />
       </a>
-      <a
-        href="#portfolio"
-        onClick={() => setActiveNav("#portfolio")}
-        className={activeNav === "#portfolio" ? "active" : ""}
-      >
-        <RiServiceLine />
-      </a>
+
       <a
         href="#contact"
         onClick={() => setActiveNav("#contact")}
