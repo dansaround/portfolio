@@ -61,7 +61,7 @@ const portfolioItems = [
     github: "https://github.com/dansaround/anime2watch",
     demo: "https://anime2watch.vercel.app/",
     description:
-      "Used server components and integrated Apollo GraphQL Anilist API. Next.j + Typescript",
+      "Used SSR and SSG with Anilists GraphQL API. Next.j + Typescript",
   },
 ];
 
