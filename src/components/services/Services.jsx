@@ -1,6 +1,6 @@
 import React from "react";
 import "./services.css";
-import { BiCheck } from "react-icons/bi";
+import { BsCheckCircleFill } from "react-icons/bs";
 
 const Services = () => {
   return (
@@ -16,19 +16,19 @@ const Services = () => {
 
           <ul className="service__list">
             <li>
-              <BiCheck className="service__list-icon" />
+              <BsCheckCircleFill className="service__list-icon" />
               <p>Logo Design</p>
             </li>
             <li>
-              <BiCheck className="service__list-icon" />
+              <BsCheckCircleFill className="service__list-icon" />
               <p>Branding Brief</p>
             </li>
             <li>
-              <BiCheck className="service__list-icon" />
+              <BsCheckCircleFill className="service__list-icon" />
               <p>Post's templates</p>
             </li>
             <li>
-              <BiCheck className="service__list-icon" />
+              <BsCheckCircleFill className="service__list-icon" />
               <p>
                 Unleash your brand's unique identity with our team of
                 exceptional designers spanning Latin America.
@@ -44,26 +44,26 @@ const Services = () => {
 
           <ul className="service__list">
             <li>
-              <BiCheck className="service__list-icon" />
+              <BsCheckCircleFill className="service__list-icon" />
               <p>
                 This responsive website is an example of using HTML/CSS/JS with
                 React.js Project.
               </p>
             </li>
             <li>
-              <BiCheck className="service__list-icon" />
+              <BsCheckCircleFill className="service__list-icon" />
               <p>Fully responsive websites</p>
             </li>
             <li>
-              <BiCheck className="service__list-icon" />
+              <BsCheckCircleFill className="service__list-icon" />
               <p>Backend approachable</p>
             </li>
             <li>
-              <BiCheck className="service__list-icon" />
+              <BsCheckCircleFill className="service__list-icon" />
               <p> E-Commerce is possible </p>
             </li>
             <li>
-              <BiCheck className="service__list-icon" />
+              <BsCheckCircleFill className="service__list-icon" />
               <p>Search Engine Optimization</p>
             </li>
           </ul>
@@ -76,19 +76,19 @@ const Services = () => {
 
           <ul className="service__list">
             <li>
-              <BiCheck className="service__list-icon" />
+              <BsCheckCircleFill className="service__list-icon" />
               <p> Product Photography</p>
             </li>
             <li>
-              <BiCheck className="service__list-icon" />
+              <BsCheckCircleFill className="service__list-icon" />
               <p>Event Photography</p>
             </li>
             <li>
-              <BiCheck className="service__list-icon" />
+              <BsCheckCircleFill className="service__list-icon" />
               <p>Video Editing</p>
             </li>
             <li>
-              <BiCheck className="service__list-icon" />
+              <BsCheckCircleFill className="service__list-icon" />
               <p> Social Media Content Creation </p>
             </li>
           </ul>

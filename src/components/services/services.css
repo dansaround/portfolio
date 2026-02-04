@@ -1,7 +1,7 @@
 .services__container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
+  gap: 2.5rem;
 }
 
 .service {
@@ -27,27 +27,37 @@
 
 .service__head h3 {
   color: var(--color-bg);
-  font-size: 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
   text-align: center;
 }
 
 .service__list {
-  padding: 2rem;
+  padding: 2.5rem;
 }
 
 .service__list li {
   display: flex;
+  align-items: flex-start;
   gap: 1rem;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.service__list li:last-child {
+  margin-bottom: 0;
 }
 
 .service__list-icon {
   color: var(--color-primary);
-  margin-top: 2px;
+  font-size: 1.2rem;
+  min-width: 1.2rem;
+  margin-top: 0.15rem;
+  flex-shrink: 0;
 }
 
 .service__list p {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
 /* ========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
