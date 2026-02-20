@@ -9,15 +9,35 @@ const poppins = Poppins({
   variable: "--font-poppins",
 });
 
+const siteUrl = "https://portfolio-dansarounds-projects.vercel.app";
+const description =
+  "Frontend Developer specializing in React.js and Next.js. I build responsive, performant web experiences with a strong focus on UI/UX and business impact.";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Daniel Kcomt | Frontend Developer",
-  description:
-    "Frontend Developer specializing in React.js and Next.js. Building responsive, performant web experiences.",
+  description,
   openGraph: {
     title: "Daniel Kcomt | Frontend Developer",
-    description:
-      "Frontend Developer specializing in React.js and Next.js. Building responsive, performant web experiences.",
+    description,
+    url: siteUrl,
+    siteName: "Daniel Kcomt",
+    locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/assets/about.png",
+        width: 1200,
+        height: 630,
+        alt: "Daniel Kcomt - Frontend Developer",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Daniel Kcomt | Frontend Developer",
+    description,
+    images: ["/assets/about.png"],
   },
 };
 
