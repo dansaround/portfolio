@@ -1,4 +1,3 @@
-import "./contact.css";
 import { MdOutlineEmail } from "react-icons/md";
 import { RiMessengerLine } from "react-icons/ri";
 import { BsWhatsapp } from "react-icons/bs";
@@ -9,47 +8,48 @@ const Contact = () => {
       <h5>Get In Touch</h5>
       <h2>Contact Me</h2>
 
-      <div className="container contact__container">
-        <div className="contact__options">
-          <article className="contact__option">
-            <MdOutlineEmail className="contact__option-icon" />
-            <h4>Email</h4>
-            <h5>Kcomtdaniel@gmail.com</h5>
-            <a
-              href="mailto:kcomtdaniel@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Send a Message
-            </a>
-          </article>
+      <div className="container flex gap-5 flex-wrap justify-center items-center">
+        <article className="bg-bg-variant p-5 rounded-[1.2rem] text-center min-w-[15rem] border border-transparent transition-all duration-400">
+          <MdOutlineEmail className="text-[1.5rem] mb-2 mx-auto" />
+          <h4>Email</h4>
+          <h5>Kcomtdaniel@gmail.com</h5>
+          <a
+            href="mailto:kcomtdaniel@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-3 inline-block text-[0.8rem]"
+          >
+            Send a Message
+          </a>
+        </article>
 
-          <article className="contact__option">
-            <RiMessengerLine className="contact__option-icon" />
-            <h4>Messenger</h4>
-            <h5>Daniel Kcomt</h5>
-            <a
-              href="https://m.me/DanKcomt"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Send a Message
-            </a>
-          </article>
+        <article className="bg-bg-variant p-5 rounded-[1.2rem] text-center min-w-[15rem] border border-transparent transition-all duration-400">
+          <RiMessengerLine className="text-[1.5rem] mb-2 mx-auto" />
+          <h4>Messenger</h4>
+          <h5>Daniel Kcomt</h5>
+          <a
+            href="https://m.me/DanKcomt"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-3 inline-block text-[0.8rem]"
+          >
+            Send a Message
+          </a>
+        </article>
 
-          <article className="contact__option">
-            <BsWhatsapp className="contact__option-icon" />
-            <h4>Whatsapp</h4>
-            <h5>+57 300 322 3023</h5>
-            <a
-              href="https://wa.me/573003223023/?text=Hi%20Dan.%20I%20saw%20your%20Portfolio%20and%20wanted%20to%20contact%20you"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Send a Message
-            </a>
-          </article>
-        </div>
+        <article className="bg-bg-variant p-5 rounded-[1.2rem] text-center min-w-[15rem] border border-transparent transition-all duration-400">
+          <BsWhatsapp className="text-[1.5rem] mb-2 mx-auto" />
+          <h4>Whatsapp</h4>
+          <h5>+57 300 322 3023</h5>
+          <a
+            href="https://wa.me/573003223023/?text=Hi%20Dan.%20I%20saw%20your%20Portfolio%20and%20wanted%20to%20contact%20you"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-3 inline-block text-[0.8rem]"
+          >
+            Send a Message
+          </a>
+        </article>
       </div>
     </section>
   );

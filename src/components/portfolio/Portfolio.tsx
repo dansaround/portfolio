@@ -1,5 +1,3 @@
-import "./portfolio.css";
-
 const portfolioItems = [
   {
     id: 0,
@@ -63,15 +61,18 @@ const Portfolio = () => {
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
 
-      <div className="container portfolio__container">
+      <div className="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-5 md:gap-8">
         {[...portfolioItems].reverse().map((item) => (
-          <article key={item.id} className="portfolio__item">
-            <div className="portfolio__item-image">
+          <article
+            key={item.id}
+            className="bg-bg-variant p-5 rounded-[2rem] border border-transparent transition-all duration-400"
+          >
+            <div className="rounded-[1.5rem] overflow-hidden">
               <img src={item.image} alt={item.title} />
             </div>
-            <h3>{item.title}</h3>
-            <span>{item.description}</span>
-            <div className="portfolio__item-cta">
+            <h3 className="my-5">{item.title}</h3>
+            <span className="text-[0.9em]">{item.description}</span>
+            <div className="mt-5 flex gap-4 mb-4">
               <a
                 href={item.github}
                 className="btn"

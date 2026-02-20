@@ -1,6 +1,5 @@
 "use client";
 
-import "./testimonials.css";
 import { Pagination, Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -34,7 +33,7 @@ const Testimonials = () => {
       <h2>Testimonials</h2>
 
       <Swiper
-        className="container testimonials__container"
+        className="mx-auto w-[90%] sm:w-[70%] pb-16"
         modules={[Autoplay, Navigation, Pagination]}
         spaceBetween={40}
         slidesPerView={1}
@@ -48,12 +47,17 @@ const Testimonials = () => {
         navigation={true}
       >
         {data.map(({ avatar, name, review }, index) => (
-          <SwiperSlide key={index} className="testimonial">
-            <div className="client__avatar">
+          <SwiperSlide
+            key={index}
+            className="bg-bg-variant text-center p-8 rounded-[2rem] select-none"
+          >
+            <div className="w-16 aspect-square overflow-hidden rounded-full mx-auto mb-4 border-[0.4rem] border-primary/40">
               <img src={avatar} alt={`${name} avatar`} />
             </div>
-            <h5 className="client__name">{name}</h5>
-            <small className="client__review">{review}</small>
+            <h5>{name}</h5>
+            <small className="text-white/60 font-light block w-4/5 mx-auto mt-3">
+              {review}
+            </small>
           </SwiperSlide>
         ))}
       </Swiper>
