@@ -1,0 +1,6 @@
+# Refuse versions published in the last 24 hours.
+minimumReleaseAge: 1440
+
+allowBuilds:
+  esbuild: true
+  sharp: true

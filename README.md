@@ -4,15 +4,18 @@ Static personal site. Astro builds one HTML page, Tailwind v4 styles it, and the
 
 ## Run it
 
-Node.js 22 or newer, and pnpm 10 (Corepack ships it).
+Node.js 22 or newer, and pnpm 11 (this repo pins 11.5.2). Windows, macOS, and Linux use the same commands:
 
-Windows (PowerShell or Command Prompt), macOS, and Linux use the same commands:
+```powershell
+pnpm install
+pnpm dev
+```
+
+If pnpm 11 is not on your PATH yet, Corepack can activate the pinned version:
 
 ```powershell
 corepack enable
-corepack prepare pnpm@10.33.4 --activate
-pnpm install
-pnpm dev
+corepack prepare pnpm@11.5.2 --activate
 ```
 
 `pnpm dev` serves the site at http://localhost:4321.
