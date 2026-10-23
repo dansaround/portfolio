@@ -1,0 +1,7 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "astro",
+  "installCommand": "export COREPACK_ENABLE_DOWNLOAD_PROMPT=0; (corepack pnpm -v || npm i -g corepack@latest) && corepack pnpm i --frozen-lockfile",
+  "buildCommand": "corepack pnpm run build",
+  "outputDirectory": "dist"
+}

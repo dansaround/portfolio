@@ -25,7 +25,7 @@ pnpm build
 pnpm preview
 ```
 
-`pnpm build` writes the static site to `dist/`. `pnpm preview` serves that folder. Vercel builds this with the Astro preset; no adapter is required.
+`pnpm build` writes the static site to `dist/`. `pnpm preview` serves that folder. Preview deploys read `vercel.json` (Astro, output `dist`, pnpm 11.5.2) so the Next.js settings on the existing Vercel project stay in place for `main`. No adapter is required.
 
 ## What’s in the page
 
