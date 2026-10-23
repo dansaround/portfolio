@@ -40,9 +40,9 @@ const Contact = () => {
         <article className="bg-bg-variant p-5 rounded-[1.2rem] text-center min-w-[15rem] border border-transparent transition-all duration-400">
           <BsWhatsapp className="text-[1.5rem] mb-2 mx-auto" />
           <h4>Whatsapp</h4>
-          <h5>+57 300 322 3023</h5>
+          <h5>+51 932 922 494</h5>
           <a
-            href="https://wa.me/573003223023/?text=Hi%20Dan.%20I%20saw%20your%20Portfolio%20and%20wanted%20to%20contact%20you"
+            href="https://wa.me/51932922494/?text=Hi%20Dan.%20I%20saw%20your%20Portfolio%20and%20wanted%20to%20contact%20you"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-3 inline-block text-[0.8rem]"

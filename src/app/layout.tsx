@@ -11,14 +11,14 @@ const poppins = Poppins({
 
 const siteUrl = "https://portfolio-dansarounds-projects.vercel.app";
 const description =
-  "Frontend Developer specializing in React.js and Next.js. I build responsive, performant web experiences with a strong focus on UI/UX and business impact.";
+  "Full-stack developer building AI-native products in production with Next.js, TypeScript and LLMs (Claude, OpenAI), from prompt engineering to payments, analytics and automation.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Daniel Kcomt | Frontend Developer",
+  title: "Daniel Kcomt | Full-Stack Developer",
   description,
   openGraph: {
-    title: "Daniel Kcomt | Frontend Developer",
+    title: "Daniel Kcomt | Full-Stack Developer",
     description,
     url: siteUrl,
     siteName: "Daniel Kcomt",
@@ -29,13 +29,13 @@ export const metadata: Metadata = {
         url: "/assets/about.png",
         width: 1200,
         height: 630,
-        alt: "Daniel Kcomt - Frontend Developer",
+        alt: "Daniel Kcomt - Full-Stack Developer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Daniel Kcomt | Frontend Developer",
+    title: "Daniel Kcomt | Full-Stack Developer",
     description,
     images: ["/assets/about.png"],
   },

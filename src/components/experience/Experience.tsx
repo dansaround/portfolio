@@ -12,28 +12,12 @@ const Experience = () => {
                      transition-all duration-400 sm:w-4/5 sm:mx-auto sm:p-8
                      md:w-auto md:px-20 md:py-10"
         >
-          <h3 className="text-center mb-8 text-primary">Frontend Development</h3>
+          <h3 className="text-center mb-8 text-primary">Frontend &amp; Mobile</h3>
           <div className="grid grid-cols-2 gap-y-8 p-4 md:p-0">
             <article className="flex gap-4">
               <BsPatchCheckFill className="mt-[6px] text-primary" />
               <div>
-                <h4>HTML</h4>
-                <small className="text-white/60">Experienced</small>
-              </div>
-            </article>
-
-            <article className="flex gap-4">
-              <BsPatchCheckFill className="mt-[6px] text-primary" />
-              <div>
-                <h4>CSS</h4>
-                <small className="text-white/60">Experienced</small>
-              </div>
-            </article>
-
-            <article className="flex gap-4">
-              <BsPatchCheckFill className="mt-[6px] text-primary" />
-              <div>
-                <h4>Typescript</h4>
+                <h4>React</h4>
                 <small className="text-white/60">Experienced</small>
               </div>
             </article>
@@ -49,6 +33,14 @@ const Experience = () => {
             <article className="flex gap-4">
               <BsPatchCheckFill className="mt-[6px] text-primary" />
               <div>
+                <h4>TypeScript</h4>
+                <small className="text-white/60">Experienced</small>
+              </div>
+            </article>
+
+            <article className="flex gap-4">
+              <BsPatchCheckFill className="mt-[6px] text-primary" />
+              <div>
                 <h4>Tailwind</h4>
                 <small className="text-white/60">Experienced</small>
               </div>
@@ -57,8 +49,16 @@ const Experience = () => {
             <article className="flex gap-4">
               <BsPatchCheckFill className="mt-[6px] text-primary" />
               <div>
-                <h4>React</h4>
-                <small className="text-white/60">Experienced</small>
+                <h4>React Native</h4>
+                <small className="text-white/60">Expo, in production</small>
+              </div>
+            </article>
+
+            <article className="flex gap-4">
+              <BsPatchCheckFill className="mt-[6px] text-primary" />
+              <div>
+                <h4>Jetpack Compose</h4>
+                <small className="text-white/60">Kotlin, Android</small>
               </div>
             </article>
           </div>
@@ -69,28 +69,20 @@ const Experience = () => {
                      transition-all duration-400 sm:w-4/5 sm:mx-auto sm:p-8
                      md:w-auto md:px-20 md:py-10"
         >
-          <h3 className="text-center mb-8 text-primary">Other Skills</h3>
+          <h3 className="text-center mb-8 text-primary">Backend, AI &amp; Cloud</h3>
           <div className="grid grid-cols-2 gap-y-8 p-4 md:p-0">
             <article className="flex gap-4">
               <BsPatchCheckFill className="mt-[6px] text-primary" />
               <div>
-                <h4>Node.js</h4>
-                <small className="text-white/60">Basic</small>
+                <h4>Claude &amp; OpenAI</h4>
+                <small className="text-white/60">LLMs in production</small>
               </div>
             </article>
 
             <article className="flex gap-4">
               <BsPatchCheckFill className="mt-[6px] text-primary" />
               <div>
-                <h4>GraphQL</h4>
-                <small className="text-white/60">Basic</small>
-              </div>
-            </article>
-
-            <article className="flex gap-4">
-              <BsPatchCheckFill className="mt-[6px] text-primary" />
-              <div>
-                <h4>Proactive</h4>
+                <h4>tRPC &amp; Prisma</h4>
                 <small className="text-white/60">Experienced</small>
               </div>
             </article>
@@ -98,16 +90,48 @@ const Experience = () => {
             <article className="flex gap-4">
               <BsPatchCheckFill className="mt-[6px] text-primary" />
               <div>
-                <h4>Team Work</h4>
-                <small className="text-white/60">Makes the dream work</small>
+                <h4>Supabase</h4>
+                <small className="text-white/60">Experienced</small>
               </div>
             </article>
 
             <article className="flex gap-4">
               <BsPatchCheckFill className="mt-[6px] text-primary" />
               <div>
-                <h4>Problem Solving</h4>
-                <small className="text-white/60">The right mindset</small>
+                <h4>Convex</h4>
+                <small className="text-white/60">Real-time apps</small>
+              </div>
+            </article>
+
+            <article className="flex gap-4">
+              <BsPatchCheckFill className="mt-[6px] text-primary" />
+              <div>
+                <h4>GraphQL</h4>
+                <small className="text-white/60">Apollo Client</small>
+              </div>
+            </article>
+
+            <article className="flex gap-4">
+              <BsPatchCheckFill className="mt-[6px] text-primary" />
+              <div>
+                <h4>Vercel, GCP &amp; AWS</h4>
+                <small className="text-white/60">Cloud Run, Lambda, SQS</small>
+              </div>
+            </article>
+
+            <article className="flex gap-4">
+              <BsPatchCheckFill className="mt-[6px] text-primary" />
+              <div>
+                <h4>Rust + Tauri</h4>
+                <small className="text-white/60">Desktop apps</small>
+              </div>
+            </article>
+
+            <article className="flex gap-4">
+              <BsPatchCheckFill className="mt-[6px] text-primary" />
+              <div>
+                <h4>PostHog</h4>
+                <small className="text-white/60">Product analytics</small>
               </div>
             </article>
           </div>

@@ -26,7 +26,7 @@ const About = () => {
               <FaAward className="text-primary text-[1.4rem] mb-4 mx-auto" />
               <h5 className="text-[0.95rem] text-white/60">Experience</h5>
               <small className="text-[0.7rem] text-white/60">
-                2 Years Developing
+                5+ Years Developing
               </small>
             </article>
 
@@ -34,9 +34,9 @@ const About = () => {
               <FiUsers className="text-primary text-[1.4rem] mb-4 mx-auto" />
               <h5 className="text-[0.95rem] text-white/60">Clients</h5>
               <div className="flex flex-col">
-                <small className="text-[0.7rem] text-white/60">Jausme App</small>
+                <small className="text-[0.7rem] text-white/60">Moddo (EdTech)</small>
                 <small className="text-[0.7rem] text-white/60">
-                  CoDev Agency
+                  MCODE
                 </small>
                 <small className="text-[0.7rem] text-white/60">
                   Mónica Marín
@@ -52,10 +52,13 @@ const About = () => {
           </div>
 
           <p className="text-white/60 my-6 sm:mt-4 sm:mb-6 md:mt-8 md:mb-[2.6rem]">
-            I am a 28-year-old Frontend Developer specializing in React.js. I
-            have a degree in Social Communication and a wealth of experience in
-            radio production, communication strategy, marketing analysis, and
-            project management.
+            Full-stack developer building AI-native products in production.
+            Currently I ship an AI tutoring platform used by 4 schools across
+            Latin America, from the Claude-powered tutor to analytics and
+            payments, and an AI WhatsApp chatbot + CRM for real estate. I have a
+            degree in Social Communication and years of experience in audiovisual
+            production, marketing and project management, so I care about the why
+            behind the code. Fluent English (C2), native Spanish.
           </p>
 
           <a href="#contact" className="btn btn-primary">

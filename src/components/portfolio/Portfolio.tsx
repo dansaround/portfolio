@@ -9,15 +9,6 @@ const portfolioItems = [
       "Personal video library using Youtube's API. React + Javascript",
   },
   {
-    id: 1,
-    image: "/assets/portfolio/presents.gif",
-    title: "Presents: Link Hub",
-    github: "https://github.com/dansaround/presents",
-    demo: "https://presents-lac.vercel.app/",
-    description:
-      "Digital Hub for Real State Agents, think linktree but 10x better. React + Typescript",
-  },
-  {
     id: 2,
     image: "/assets/portfolio/hg-image-generator.gif",
     title: "AI Image Generator",
@@ -52,6 +43,15 @@ const portfolioItems = [
     demo: "https://anime2watch.vercel.app/",
     description:
       "Used SSR and SSG with Anilists GraphQL API. Next.js + Typescript",
+  },
+  {
+    id: 6,
+    image: "/assets/portfolio/whisperaround.gif",
+    title: "WhisperAround: Voice Dictation",
+    github: "https://github.com/dansaround/whisperaround",
+    demo: "https://github.com/dansaround/whisperaround/releases/latest",
+    description:
+      "Open-source desktop dictation: press a shortcut, speak, and the text appears in any app. Local Whisper or cloud models, signed auto-updates. Rust + Tauri v2 + Svelte",
   },
 ];
 

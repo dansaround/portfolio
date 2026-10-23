@@ -7,7 +7,7 @@ const Header = () => {
       <div className="container relative h-full text-center">
         <h5>Hello I&apos;m</h5>
         <h1>Daniel Kcomt</h1>
-        <h5 className="text-white/60">Front-End Developer</h5>
+        <h5 className="text-white/60">Full-Stack Developer | AI-Powered Products</h5>
         <CTA />
         <HeaderSocials />
         <div
