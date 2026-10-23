@@ -1,0 +1,107 @@
+---
+import "../styles/global.css";
+import { description, siteUrl } from "../data/site";
+
+const title = "Daniel Kcomt | Full-Stack Developer";
+const ogImage = new URL("/og.jpg", siteUrl).href;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content="Daniel Kcomt" />
+    <meta name="theme-color" content="#06525c" />
+    <link rel="canonical" href={siteUrl} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="/fonts/boska-400.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/media/hero.webp"
+      as="image"
+      type="image/webp"
+      imagesrcset="/media/hero-640.webp 640w, /media/hero.webp 1000w"
+      imagesizes="(max-width: 64rem) 92vw, 40vw"
+    />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={siteUrl} />
+    <meta property="og:site_name" content="Daniel Kcomt" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Daniel Kcomt, full-stack developer" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Person",
+      name: "Daniel Kcomt",
+      jobTitle: "Full-Stack Developer",
+      description,
+      url: siteUrl,
+      email: "mailto:kcomtdaniel@gmail.com",
+      knowsLanguage: ["en", "es"],
+      sameAs: [
+        "https://www.linkedin.com/in/daniel-kcomt-frontend-developer/",
+        "https://github.com/dansaround/",
+        "https://www.instagram.com/dansaround_/",
+      ],
+    })} />
+  </head>
+  <body>
+    <slot />
+    <script>
+      const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const line = document.getElementById("dictation");
+      const shortcut = document.getElementById("shortcut");
+      if (line && shortcut && !reduced) {
+        const full = (line.textContent || "").trim();
+        let timer = 0;
+        shortcut.addEventListener("click", (event) => {
+          event.preventDefault();
+          window.clearInterval(timer);
+          let index = 0;
+          line.textContent = "";
+          timer = window.setInterval(() => {
+            index += 1;
+            line.textContent = full.slice(0, index);
+            if (index >= full.length) window.clearInterval(timer);
+          }, 28);
+        });
+      }
+
+      const videos = document.querySelectorAll("video[data-lazy]");
+      if (videos.length && "IntersectionObserver" in window) {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            for (const entry of entries) {
+              const video = entry.target as HTMLVideoElement;
+              if (entry.isIntersecting) {
+                video.preload = "auto";
+                if (!reduced) video.play().catch(() => {});
+              } else {
+                video.pause();
+              }
+            }
+          },
+          { rootMargin: "200px" },
+        );
+        videos.forEach((video) => observer.observe(video));
+      }
+    </script>
+  </body>
+</html>

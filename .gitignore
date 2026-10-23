@@ -8,6 +8,13 @@
 /out/
 next-env.d.ts
 
+# Astro
+/dist/
+.astro/
+
+# design-skill working files
+.taste-skill/
+
 # production
 /build
 

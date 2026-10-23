@@ -1,75 +1,32 @@
----
-title: "Dan Kcomt's Portfolio"
-by: Dan Kcomt
----
+# Daniel Kcomt — portfolio
 
-# Dan Kcomt's Portfolio
+Static personal site. Astro builds one HTML page, Tailwind v4 styles it, and the only JavaScript is a small inline module for the dictation replay and lazy video playback.
 
-![](https://i.imgur.com/VS2j6Ct.png)
+## Run it
 
-## Table of Contents
+Node.js 22 or newer, and pnpm 11 (this repo pins 11.5.2). Windows, macOS, and Linux use the same commands:
 
-Dan Kcomt’s Portfolio
-
-- Table of Contents
-- Intro
-- User story
-- Appendix and FAQ
-
-## Intro
-
-This is a Portfolio the projects I have developed so far in my developer journey.
-
-Feel free to contact me through: kcomtdaniel@gmail.com
-
-## User story
-
-```jsx=
-const App = () => {
-  return (
-    <>
-      <Header />
-      <Nav />
-      <About />
-      <Experience />
-      <Services />
-      <Portfolio />
-      <Testimonials />
-      <Contact />
-      <Footer />
-    </>
-  );
-};
+```powershell
+pnpm install
+pnpm dev
 ```
 
-The code defines a single component App that renders several other components, each responsible for displaying a different section of the portfolio page.
+If pnpm 11 is not on your PATH yet, Corepack can activate the pinned version:
 
-The component App returns a layout that consists of:
+```powershell
+corepack enable
+corepack prepare pnpm@11.5.2 --activate
+```
 
-**Header component** - displays the header of the portfolio page
+`pnpm dev` serves the site at http://localhost:4321.
 
-**Nav component** - responsible for the navigation menu
+```powershell
+pnpm build
+pnpm preview
+```
 
-**About component** - displays information about the portfolio owner
+`pnpm build` writes the static site to `dist/`. `pnpm preview` serves that folder. Preview deploys read `vercel.json` (Astro, output `dist`, pnpm 11.5.2) so the Next.js settings on the existing Vercel project stay in place for `main`. No adapter is required.
 
-**Experience component** - highlights the owner's professional background and experience
+## What’s in the page
 
-**Services component** - outlines the services offered by the portfolio owner
-
-**Portfolio component** - showcases the portfolio owner's past work and projects
-
-**Testimonials component** - displays testimonials from clients and colleagues
-
-**Contact component** - provides contact information for the portfolio owner
-
-**Footer component** - displays the footer of the portfolio page.
-
-By breaking down the portfolio into smaller, self-contained components, the code becomes more manageable and easier to maintain. Additionally, it allows for a more modular and scalable approach, making it easier to add or modify sections of the portfolio in the future.
-
-## Appendix and FAQ
-
-:::info
-**Find this document incomplete?** Leave a comment!
-:::
-
-###### tags: `Portfolio` `Documentation`
+The copy, project order (WhisperAround first), contact links, and the files in `public/assets` are the existing portfolio. The page itself uses lighter derivatives in `public/media`: looping muted WebM/MP4 with a WebP poster for each project, and WebP/AVIF stills for the photographs. Boska is self-hosted and subset in `public/fonts`.

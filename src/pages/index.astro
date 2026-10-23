@@ -1,0 +1,339 @@
+---
+import Base from "../layouts/Base.astro";
+import {
+  about,
+  dictated,
+  facts,
+  footerNav,
+  links,
+  projects,
+  services,
+  skillGroups,
+  testimonials,
+} from "../data/site";
+---
+
+<Base>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="sheet">
+    <header class="hero" id="top">
+      <div class="invitation">
+        <div class="hero-bar">
+          <a class="mark" href="#top" aria-label="DK, Daniel Kcomt">DK</a>
+          <nav aria-label="Page">
+            <a href="#portfolio">Portfolio</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          <a class="btn" href="#contact">Let’s Talk</a>
+        </div>
+
+        <div class="hero-main">
+          <div class="hero-copy">
+            <div>
+              <h1>
+                <span>Daniel</span>
+                <span>Kcomt</span>
+              </h1>
+              <p class="role">Full-Stack Developer | AI-Powered Products</p>
+            </div>
+            <div class="hero-lower">
+              <span class="diamond" aria-hidden="true"></span>
+              <p class="hello">Hello I’m</p>
+              <p id="dictation">{dictated}</p>
+              <div class="card-actions">
+                <a href={links.cv} download>Download CV</a>
+                <a id="shortcut" href="#whisperaround">Press a shortcut</a>
+              </div>
+              <nav class="card-nav" aria-label="Page">
+                <a href="#portfolio">Portfolio</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+              </nav>
+            </div>
+          </div>
+          <figure class="hero-photo">
+            <img
+              src="/media/hero.webp"
+              srcset="/media/hero-640.webp 640w, /media/hero.webp 1000w"
+              sizes="(max-width: 64rem) 92vw, 40vw"
+              width="1000"
+              height="1369"
+              alt="Daniel Kcomt standing in a green studio"
+              fetchpriority="high"
+              decoding="async"
+            />
+          </figure>
+        </div>
+        <a class="scroll" href="#portfolio">Scroll Down</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="portfolio" aria-labelledby="portfolio-title">
+        <div class="wrap section-head">
+          <h2 id="portfolio-title">Portfolio</h2>
+          <p>My Recent Work</p>
+        </div>
+        <div class="folders">
+          {
+            projects.map((project, index) => (
+              <article
+                class="folder"
+                id={project.id}
+                style={`--stick:${index * 3.6}rem;--z:${index + 2}`}
+              >
+                <h3 class="tab">{project.title}</h3>
+                <div class="folder-band">
+                  <p class="discipline">{project.discipline}</p>
+                  <div class="folder-grid">
+                    <figure class="frame">
+                      <video
+                        data-lazy
+                        muted
+                        loop
+                        playsinline
+                        preload="none"
+                        poster={`${project.base}.webp`}
+                        width={project.width}
+                        height={project.height}
+                        aria-label={project.title}
+                      >
+                        <source src={`${project.base}.webm`} type="video/webm" />
+                        <source src={`${project.base}.mp4`} type="video/mp4" />
+                      </video>
+                    </figure>
+                    <div class="folder-copy rise rise-late">
+                      <p>{project.description}</p>
+                      <div class="folder-links">
+                        <a class="text-link" href={project.github} target="_blank" rel="noopener noreferrer">
+                          Github
+                        </a>
+                        <a class="btn" href={project.demo} target="_blank" rel="noopener noreferrer">
+                          Live Demo
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            ))
+          }
+        </div>
+      </section>
+
+      <section id="about" aria-labelledby="about-title">
+        <div class="letter-wrap">
+          <article class="letter">
+            <img
+              class="portrait"
+              src="/media/portrait.webp"
+              width="320"
+              height="320"
+              alt="Daniel Kcomt"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="section-head">
+              <h2 id="about-title">About Me</h2>
+              <p>Get to Know</p>
+            </div>
+            {about.map((paragraph) => <p class="body">{paragraph}</p>)}
+            <div class="facts">
+              {
+                facts.map((fact) => (
+                  <div>
+                    <h3>{fact.label}</h3>
+                    {"value" in fact ? (
+                      <p>{fact.value}</p>
+                    ) : (
+                      <ul>
+                        {fact.lines.map((line) => (
+                          <li>{line}</li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
+                ))
+              }
+            </div>
+            <p class="letter-cta">
+              <a class="btn" href="#contact">Let’s Talk</a>
+            </p>
+            <p class="signoff">
+              Daniel Kcomt
+              <small>Full-Stack Developer | AI-Powered Products</small>
+            </p>
+          </article>
+        </div>
+        <div class="perfs" aria-hidden="true">
+          {Array.from({ length: 16 }, () => <span />)}
+        </div>
+        <div class="tear">
+          <a href={links.email}>{links.emailLabel}</a>
+          <a href={links.email}>Send a message</a>
+        </div>
+      </section>
+
+      <section id="experience" aria-labelledby="experience-title">
+        <div class="wrap">
+          <div class="section-head">
+            <h2 id="experience-title">My Experience</h2>
+            <p>What Skills I Have</p>
+          </div>
+          <div class="skill-columns">
+            {
+              skillGroups.map((group) => (
+                <div>
+                  <h3>{group.name}</h3>
+                  {group.items.map(([name, level]) => (
+                    <div class="skill-row">
+                      <span>{name}</span>
+                      <span>{level}</span>
+                    </div>
+                  ))}
+                </div>
+              ))
+            }
+          </div>
+        </div>
+      </section>
+
+      <section id="services" aria-labelledby="services-title">
+        <div class="wrap section-head">
+          <h2 id="services-title">Services</h2>
+          <p>What I Offer</p>
+        </div>
+        <div class="sheets">
+          {
+            services.map((service, index) => (
+              <article
+                class="service"
+                style={`--stick:${index * 4.5}rem;--z:${index + 2}`}
+              >
+                <h3>{service.name}</h3>
+                <div class="service-grid">
+                  <ul>
+                    {service.points.map((point) => (
+                      <li>{point}</li>
+                    ))}
+                  </ul>
+                  <figure class="frame">
+                    <img
+                      src={service.still}
+                      width={service.stillW}
+                      height={service.stillH}
+                      alt={service.stillAlt}
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </figure>
+                </div>
+              </article>
+            ))
+          }
+        </div>
+      </section>
+
+      <section id="testimonials" aria-labelledby="testimonials-title">
+        <div class="wrap section-head">
+          <h2 id="testimonials-title">Testimonials</h2>
+          <p>Review from clients</p>
+        </div>
+        <div class="slips">
+          {
+            testimonials.map((item) => (
+              <article class="slip">
+                <h3>{item.name}</h3>
+                <blockquote lang="es">
+                  <p>{item.review}</p>
+                </blockquote>
+              </article>
+            ))
+          }
+        </div>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <picture>
+          <source type="image/avif" srcset="/media/contact.avif" sizes="100vw" />
+          <img
+            class="contact-photo"
+            src="/media/contact.webp"
+            srcset="/media/contact-800.webp 800w, /media/contact-1200.webp 1200w, /media/contact.webp 2000w"
+            sizes="100vw"
+            width="2000"
+            height="1500"
+            alt="Daniel Kcomt standing against a green studio backdrop"
+            loading="lazy"
+            decoding="async"
+          />
+        </picture>
+        <article class="visit">
+          <h2 id="contact-title">Contact Me</h2>
+          <p>Get In Touch</p>
+          <div class="channels">
+            <a href={links.email}>
+              <strong>Email</strong>
+              <span>{links.emailLabel}</span>
+              <span class="send">Send a message</span>
+            </a>
+            <a href={links.messenger} target="_blank" rel="noopener noreferrer">
+              <strong>Messenger</strong>
+              <span>{links.messengerLabel}</span>
+              <span class="send">Send a message</span>
+            </a>
+            <a href={links.whatsapp} target="_blank" rel="noopener noreferrer">
+              <strong>Whatsapp</strong>
+              <span>{links.phone}</span>
+              <span class="send">Send a message</span>
+            </a>
+          </div>
+          <a class="btn" href={links.whatsapp} target="_blank" rel="noopener noreferrer">
+            Send a message
+          </a>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <footer class="back">
+    <div class="postcard">
+      <div class="postcard-grid">
+        <div>
+          <h2>Thanks for visiting</h2>
+          <p class="message">
+            Full-stack developer building AI-native products in production.
+            Fluent English (C2), native Spanish.
+          </p>
+        </div>
+        <div>
+          <div class="stamp-wrap">
+            <img
+              class="stamp"
+              src="/media/stamp.webp"
+              width="360"
+              height="480"
+              alt="Daniel Kcomt"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="address">
+            <a href={links.email}>{links.emailLabel}</a>
+            <a href={links.whatsapp} target="_blank" rel="noopener noreferrer">{links.phone}</a>
+            <a href={links.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href={links.github} target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href={links.instagram} target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href={links.messenger} target="_blank" rel="noopener noreferrer">Messenger</a>
+          </div>
+        </div>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        {footerNav.map(([label, href]) => <a href={href}>{label}</a>)}
+      </nav>
+      <p class="imprint">Daniel Kcomt. All rights reserved.</p>
+    </div>
+  </footer>
+</Base>
