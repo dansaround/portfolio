@@ -1,141 +1,35 @@
-import { BsPatchCheckFill } from "react-icons/bs";
+import { experience } from "@/data/content";
 
 const Experience = () => {
   return (
     <section id="experience">
-      <h5>What Skills I Have</h5>
-      <h2>My Experience</h2>
+      <p className="section-kicker">Where I&apos;ve worked</p>
+      <h2>Experience</h2>
 
-      <div className="container grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8">
-        <div
-          className="bg-bg-variant px-4 py-8 rounded-[2rem] border border-transparent
-                     transition-all duration-400 sm:w-4/5 sm:mx-auto sm:p-8
-                     md:w-auto md:px-20 md:py-10"
-        >
-          <h3 className="text-center mb-8 text-primary">Frontend &amp; Mobile</h3>
-          <div className="grid grid-cols-2 gap-y-8 p-4 md:p-0">
-            <article className="flex gap-4">
-              <BsPatchCheckFill className="mt-[6px] text-primary" />
-              <div>
-                <h4>React</h4>
-                <small className="text-white/60">Experienced</small>
+      <div className="container">
+        <ol className="mx-auto max-w-[52rem] border-l border-primary/40 pl-6 sm:pl-10 space-y-10">
+          {experience.map((job) => (
+            <li key={`${job.role}-${job.org}`} className="relative">
+              <span
+                aria-hidden="true"
+                className="absolute -left-[1.85rem] sm:-left-[2.85rem] top-2 h-3 w-3 rounded-full bg-primary"
+              />
+              <div className="flex flex-wrap items-baseline justify-between gap-x-4">
+                <h3 className="text-[1.15rem]">
+                  {job.role} <span className="text-primary">· {job.org}</span>
+                </h3>
+                <p className="text-[0.85rem] text-white/70">
+                  {job.dates} · {job.place}
+                </p>
               </div>
-            </article>
-
-            <article className="flex gap-4">
-              <BsPatchCheckFill className="mt-[6px] text-primary" />
-              <div>
-                <h4>Next.js</h4>
-                <small className="text-white/60">Experienced</small>
-              </div>
-            </article>
-
-            <article className="flex gap-4">
-              <BsPatchCheckFill className="mt-[6px] text-primary" />
-              <div>
-                <h4>TypeScript</h4>
-                <small className="text-white/60">Experienced</small>
-              </div>
-            </article>
-
-            <article className="flex gap-4">
-              <BsPatchCheckFill className="mt-[6px] text-primary" />
-              <div>
-                <h4>Tailwind</h4>
-                <small className="text-white/60">Experienced</small>
-              </div>
-            </article>
-
-            <article className="flex gap-4">
-              <BsPatchCheckFill className="mt-[6px] text-primary" />
-              <div>
-                <h4>React Native</h4>
-                <small className="text-white/60">Expo, in production</small>
-              </div>
-            </article>
-
-            <article className="flex gap-4">
-              <BsPatchCheckFill className="mt-[6px] text-primary" />
-              <div>
-                <h4>Jetpack Compose</h4>
-                <small className="text-white/60">Kotlin, Android</small>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <div
-          className="bg-bg-variant px-4 py-8 rounded-[2rem] border border-transparent
-                     transition-all duration-400 sm:w-4/5 sm:mx-auto sm:p-8
-                     md:w-auto md:px-20 md:py-10"
-        >
-          <h3 className="text-center mb-8 text-primary">Backend, AI &amp; Cloud</h3>
-          <div className="grid grid-cols-2 gap-y-8 p-4 md:p-0">
-            <article className="flex gap-4">
-              <BsPatchCheckFill className="mt-[6px] text-primary" />
-              <div>
-                <h4>Claude &amp; OpenAI</h4>
-                <small className="text-white/60">LLMs in production</small>
-              </div>
-            </article>
-
-            <article className="flex gap-4">
-              <BsPatchCheckFill className="mt-[6px] text-primary" />
-              <div>
-                <h4>tRPC &amp; Prisma</h4>
-                <small className="text-white/60">Experienced</small>
-              </div>
-            </article>
-
-            <article className="flex gap-4">
-              <BsPatchCheckFill className="mt-[6px] text-primary" />
-              <div>
-                <h4>Supabase</h4>
-                <small className="text-white/60">Experienced</small>
-              </div>
-            </article>
-
-            <article className="flex gap-4">
-              <BsPatchCheckFill className="mt-[6px] text-primary" />
-              <div>
-                <h4>Convex</h4>
-                <small className="text-white/60">Real-time apps</small>
-              </div>
-            </article>
-
-            <article className="flex gap-4">
-              <BsPatchCheckFill className="mt-[6px] text-primary" />
-              <div>
-                <h4>GraphQL</h4>
-                <small className="text-white/60">Apollo Client</small>
-              </div>
-            </article>
-
-            <article className="flex gap-4">
-              <BsPatchCheckFill className="mt-[6px] text-primary" />
-              <div>
-                <h4>Vercel, GCP &amp; AWS</h4>
-                <small className="text-white/60">Cloud Run, Lambda, SQS</small>
-              </div>
-            </article>
-
-            <article className="flex gap-4">
-              <BsPatchCheckFill className="mt-[6px] text-primary" />
-              <div>
-                <h4>Rust + Tauri</h4>
-                <small className="text-white/60">Desktop apps</small>
-              </div>
-            </article>
-
-            <article className="flex gap-4">
-              <BsPatchCheckFill className="mt-[6px] text-primary" />
-              <div>
-                <h4>PostHog</h4>
-                <small className="text-white/60">Product analytics</small>
-              </div>
-            </article>
-          </div>
-        </div>
+              <ul className="mt-3 list-disc pl-5 space-y-2 text-[0.95rem] text-white/80 marker:text-primary">
+                {job.points.map((p) => (
+                  <li key={p}>{p}</li>
+                ))}
+              </ul>
+            </li>
+          ))}
+        </ol>
       </div>
     </section>
   );
