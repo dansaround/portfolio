@@ -16,7 +16,7 @@ module.exports = {
         sans: ['var(--font-poppins)', 'sans-serif'],
       },
       backgroundImage: {
-        texture: "url('/assets/bg-texture.png')",
+        texture: "url('/media/bg-texture.png')",
       },
       transitionDuration: {
         400: '400ms',
