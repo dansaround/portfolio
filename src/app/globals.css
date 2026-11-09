@@ -24,19 +24,19 @@
   }
 
   h1 {
-    @apply text-[2.5rem];
+    @apply text-[2.5rem] sm:text-[3rem];
   }
 
   section {
     @apply mt-24 md:mt-32;
   }
 
-  section > h5 {
-    @apply text-center text-white/60;
+  section {
+    @apply scroll-mt-8;
   }
 
   section > h2 {
-    @apply text-center text-primary mb-8 sm:mb-12;
+    @apply text-center text-primary text-[1.8rem] mb-8 sm:mb-12;
   }
 
   img {
@@ -49,6 +49,11 @@
 
   a:hover {
     @apply text-white;
+  }
+
+  a:focus-visible,
+  button:focus-visible {
+    @apply outline outline-2 outline-offset-2 outline-primary;
   }
 }
 
@@ -63,6 +68,10 @@
            hover:bg-white hover:text-bg hover:border-transparent;
   }
 
+  .section-kicker {
+    @apply text-center text-white/70 text-[0.9rem];
+  }
+
   .btn-primary {
     @apply bg-primary text-bg;
   }
@@ -71,4 +80,9 @@
 /* Swiper pagination — no hay alternativa sin CSS */
 .swiper-pagination-clickable .swiper-pagination-bullet {
   background: rgb(77 181 255);
+}
+
+.swiper {
+  --swiper-navigation-color: rgb(77 181 255);
+  --swiper-navigation-size: 28px;
 }

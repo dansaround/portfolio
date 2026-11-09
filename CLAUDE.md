@@ -12,35 +12,41 @@ pnpm start         # Preview production build locally
 
 ## Architecture
 
-Single-page portfolio built with **Next.js 14** (App Router) + **TypeScript**. No state management library — only `useState` where needed.
+Single-page portfolio built with **Next.js 15** (App Router) + **React 19** + **TypeScript** + **Tailwind CSS v3**. No state management library — only `useState` where needed.
+
+```bash
+pnpm lint          # ESLint 9 (flat config in eslint.config.mjs)
+```
 
 ### Page structure
 
-`src/app/layout.tsx` renders Nav globally; `src/app/page.tsx` composes all sections:
+`src/app/layout.tsx` renders Nav globally and holds the metadata; `src/app/page.tsx` composes all sections:
 
 ```
-Header → Portfolio → About → Experience → Services → Testimonials → Contact → Footer
+Header → Work (Moddo, WhisperAround, freelance, earlier projects) → About → Experience → Stack → Testimonials → Contact → Footer
 ```
+
+`src/app/opengraph-image.tsx` generates the 1200×630 Open Graph image at build time; `src/app/icon.svg` is the favicon.
+
+### Content
+
+All copy lives in `src/data/content.ts` (profile, links, Moddo, WhisperAround, freelance, experience, stack). Edit text there, not in the components. Only use figures that appear in the CV or the GitHub profile README, and do not name schools or clients under NDA.
 
 ### Component conventions
 
-- Each section lives in `src/components/<section>/` as `<Section>.tsx` + `<section>.css` (co-located, lowercase CSS)
+- Each section lives in `src/components/<section>/<Section>.tsx`, styled with Tailwind utility classes
 - Client Components: `Nav.tsx` (`useState`) and `Testimonials.tsx` (Swiper) — both marked with `"use client"`
-- CSS uses **custom properties** (defined in `src/app/globals.css`) — always use `var(--color-primary)` etc.
+- Theme colors (`bg`, `bg-variant`, `primary`) and breakpoints (`sm` 600px, `md` 1024px) are in `tailwind.config.js`; shared classes (`.container`, `.btn`, `.section-kicker`) in `src/app/globals.css`
 - Font: Poppins loaded via `next/font/google` in layout.tsx, applied as `--font-poppins` CSS variable
-- Responsive breakpoints: `1024px` (medium) and `600px` (small)
-
-### Adding portfolio projects
-
-Projects are a static array `portfolioItems` inside `src/components/portfolio/Portfolio.tsx`. Add a new object with `{ id, image, title, github, demo, description }` — `image` is a public path like `/assets/portfolio/myproject.gif`. Drop the GIF in `public/assets/portfolio/`. The array is spread+`.reverse()`'d on render, so newer items (higher index) appear first.
+- Images use `next/image` with static imports
 
 ### Assets
 
-- All static files served from `public/` (Next.js standard)
-- Profile photo, about photo, CV PDF, background images: `public/assets/`
-- Portfolio preview GIFs: `public/assets/portfolio/`
+- `public/media/`: photos (WebP), WhisperAround demo video (MP4 + poster), background texture
+- `public/cv/Daniel-Kcomt-CV.pdf`: the downloadable CV (replace the file to update it)
 
 ### Dependencies of note
 
-- `react-icons` — used across all components (import from `ai`, `bi`, `bs`, `ri`, `fa`, `fi`, `io`, `md`, `vsc` sub-packages)
+- `react-icons` — used across all components
 - `swiper` v12 — used in Testimonials; modules imported from `"swiper/modules"`
+- `pnpm.overrides` in package.json pins patched versions of vulnerable transitive deps; re-check with `pnpm audit` after upgrades
