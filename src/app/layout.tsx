@@ -10,7 +10,7 @@ const poppins = Poppins({
   variable: "--font-poppins",
 });
 
-const siteUrl = "https://portfolio-dansarounds-projects.vercel.app";
+const siteUrl = "https://dansaround.vercel.app";
 const title = `${profile.name} | ${profile.role}`;
 const description =
   "AI Engineer building LLM agents with tool use, evals and the infra around them (TypeScript, Next.js, Claude). Open to remote AI Engineer roles and freelance LLM work.";

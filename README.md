@@ -2,7 +2,7 @@
 
 Personal site of Daniel Kcomt, AI Engineer (LLM agents with tool use, evals, TypeScript / Next.js).
 
-Live: https://portfolio-dansarounds-projects.vercel.app
+Live: https://dansaround.vercel.app
 
 ## Stack
 
